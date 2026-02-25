@@ -1,0 +1,133 @@
+* {
+  font-family: "Red Hat Text", sans-serif;
+  margin: 0rem;
+}
+
+body {
+  background-color: #f5f1ed;
+}
+
+.root {
+  display: flex;
+  gap: 2.5rem;
+  padding: 2.5rem 5rem;
+}
+
+.heading {
+  font-size: 2rem;
+  color: #2c1e1a;
+  margin-bottom: 2rem;
+  line-height: 1.2rem;
+}
+
+.all-desserts-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.card-container {
+  background: white;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  width: 15.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+
+.dessert-img {
+  border-radius: 0.75px;
+  object-fit: cover;
+  height: 12.5rem;
+}
+
+.add-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  height: 2.5rem;
+  width: 10rem;
+  padding: 0 1.25rem;
+  border-radius: 1.5rem;
+
+  border: 0.063rem solid hsl(14, 86%, 42%);
+  font-size: 0.875rem;
+  font-weight: 600;
+
+  position: absolute;
+  top: 190px;
+  left: 2rem;
+
+  color: hsl(14, 65%, 9%);
+}
+.add-btn:hover {
+  background-color: hsl(14, 86%, 42%);
+  cursor: pointer;
+}
+.details {
+  padding: 0.5rem;
+}
+
+.dessert-type {
+  color: hsl(12, 20%, 44%);
+  line-height: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.dessert-name {
+  color: hsl(14, 65%, 9%);
+  line-height: 1.4rem;
+}
+
+.dessert-cost {
+  color: hsl(14, 86%, 42%);
+}
+
+.cart {
+  width: 300px;
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.cart h3 {
+  color: hsl(14, 86%, 42%);
+  font-size: 20px;
+  font-weight: 700;
+}
+.cart p {
+  color: hsl(7, 20%, 60%);
+}
+
+/* Medium Devices (Landscape Tablets, 768px and up) */
+
+@media only screen and (max-width: 768px) {
+  .root {
+    flex-direction: column;
+    align-items: center;
+  }
+  .all-desserts-container{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+/* Small Devices (Portrait Tablets and Large Phones, 600px and up): */
+
+@media only screen and (max-width: 600px) {
+  .root {
+    flex-direction: column;
+    align-items: center;
+  }
+  .all-desserts-container{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+
+
+
